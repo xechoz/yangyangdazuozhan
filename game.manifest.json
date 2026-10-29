@@ -1,0 +1,14 @@
+{
+  "id": "yangyangdazuozhan",
+  "order": 4,
+  "title": {
+    "zh": "羊羊大作战",
+    "en": "Sheep Showdown"
+  },
+  "description": {
+    "zh": "部署盾羊、弓羊、冲锋羊和奶羊，在五条跑道上实时推进，攻破对方基地。支持人机对战与双人同屏对战。",
+    "en": "Deploy shield, archer, ram and healer sheep across five lanes, push the front line and break the enemy base. Play against the AI or share the screen with a friend."
+  },
+  "themeColor": "#6cbb3e",
+  "tags": ["strategy", "casual", "multiplayer"]
+}

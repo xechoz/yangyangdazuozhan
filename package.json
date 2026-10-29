@@ -1,0 +1,36 @@
+{
+  "name": "@mg/yangyangdazuozhan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "platform/packages/*"
+  ],
+  "scripts": {
+    "predev": "node platform/tooling/free-dev-port.ts 5175",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && biome check src && node platform/tooling/check-game.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "package:web": "node platform/tooling/package-web.ts",
+    "package:poki": "node platform/tooling/package-game.ts poki",
+    "package:crazy:basic": "node platform/tooling/package-game.ts crazygames-basic",
+    "package:crazy:full": "node platform/tooling/package-game.ts crazygames-full"
+  },
+  "dependencies": {
+    "@mg/core": "*",
+    "@mg/platform": "*",
+    "phaser": "^4.2.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.2",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "description": "Five-lane real-time sheep battle: deploy, push, break the enemy base."
+}
